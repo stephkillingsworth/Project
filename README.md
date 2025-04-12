@@ -7,7 +7,7 @@ The data for this model include 2D images of the occlusal (chewing surface) of u
 
 For this project, we use two approaches: 
 Approach 1: Uses upper and lower molars from each species to train a model to predict the species class (Dinohippus interpolatus, Dinohippus mexicanus, and Equus simplicidens).
-Approach 2: Uses only upper or lower molars from from each of the species to train a model to predict the species class (Dinohippus interpolatus, Dinohippus mexicanus, and Equus simplicidens).
+Approach 2: Uses only upper or lower molars from each of the species to train a model to predict the species class (Dinohippus interpolatus, Dinohippus mexicanus, and Equus simplicidens).
 
 ## Data Pre-Processing
 
