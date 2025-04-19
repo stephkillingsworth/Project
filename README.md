@@ -29,10 +29,10 @@ Several hyperparameter tuning techniques to optimize the performance of the imag
 * Weight Decay: A weight decay of 1e-5 is applied to regularize the model and prevent overfitting.
 * Batch Size: The batch size for training and validation is set to 16 in Approach 1 and 2.
 * Data Augmentation: Various data augmentation techniques are used to increase the dataset size and improve generalization:
-  * Random Resize to 384 X 384 (as opposed to standard 
-  * Random Grayscale
-  * Random Rotation (15 degrees)
-  * Random Affine transformations (small shifts)
+  * Resize to 384 X 384 (as opposed to standard 224 X 224 used with most pre-trained models)
+  * Grayscale
+  * Rotation (15 degrees)
+  * Affine transformations (small shifts)
 *  Cross-Validation: K-Fold Cross-Validation with 5 splits is used to evaluate the model's performance across different subsets of the data.
 * Dropout: A dropout rate of 0.5 is applied in the classifier layer to prevent overfitting.
 * Epochs: The model is trained for 50 epochs in each fold of the cross-validation.
