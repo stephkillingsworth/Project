@@ -41,18 +41,18 @@ Several hyperparameter tuning techniques to optimize the performance of the imag
 ## Results
 
 * Lowers
- *--- K-Fold Summary ---
-Average Train Accuracy: 59.87% ± 1.04
-Average Val Accuracy:   67.45% ± 4.67
-Average Train Loss:     1.1590
-Average Val Loss:       1.0732
+ * K-Fold Summary 
+   * Average Train Accuracy: 59.87% ± 1.04
+   * Average Val Accuracy:   67.45% ± 4.67
+   * Average Train Loss:     1.1590
+   * Average Val Loss:       1.0732
 
 * Uppers
- * --- K-Fold Summary ---
-Average Train Accuracy: 58.72% ± 1.36
-Average Val Accuracy:   66.74% ± 3.46
-Average Train Loss:     1.1829
-Average Val Loss:       1.0766
+ * K-Fold Summary
+   * Average Train Accuracy: 58.72% ± 1.36
+   * Average Val Accuracy:   66.74% ± 3.46
+   * Average Train Loss:     1.1829
+   * Average Val Loss:       1.0766
 
 ## Discussion
 Both the lower and upper molar approaches show similiar and consistent performance across the different folds, with the validation accuracy being higher than the training accuracy. This indicates that the model is generalizing well and not overfitting. The ~67% validation accuracy indicates that the model is learning more discriminative features. 
