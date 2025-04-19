@@ -25,18 +25,19 @@ We used a DenseNet121 model pretrained on ImageNet and transformed the data for 
 
 ## Hyperparameter Tuning
 Several hyperparameter tuning techniques to optimize the performance of the image classification model using DenseNet121 were implemented due to the small dataset. 
-# Learning Rate: The learning rate is set to 1e-4 for the Adam optimizer.
-# Weight Decay: A weight decay of 1e-5 is applied to regularize the model and prevent overfitting.
-# Batch Size: The batch size for training and validation is set to 32 in Approach 2A and 2B.
-# Data Augmentation: Various data augmentation techniques are used to increase the dataset size and improve generalization:
-* Random Resize to 384 X 384 (as opposed to standard 
-* Random Grayscale
-* Random Rotation (15 degrees)
-* Random Affine transformations (small shifts)
-# Cross-Validation: K-Fold Cross-Validation with 5 splits is used to evaluate the model's performance across different subsets of the data.
-# Dropout: A dropout rate of 0.5 is applied in the classifier layer to prevent overfitting.
-# Epochs: The model is trained for 50 epochs in each fold of the cross-validation.
-# Loss Function: The CrossEntropyLoss is used as the loss function for training the model.
+* Learning Rate: The learning rate is set to 1e-4 for the Adam optimizer.
+* Weight Decay: A weight decay of 1e-5 is applied to regularize the model and prevent overfitting.
+* Batch Size: The batch size for training and validation is set to 32 in Approach 2A and 2B.
+* Data Augmentation: Various data augmentation techniques are used to increase the dataset size and improve generalization:
+  * Random Resize to 384 X 384 (as opposed to standard 
+  * Random Grayscale
+  * Random Rotation (15 degrees)
+  * Random Affine transformations (small shifts)
+*  Cross-Validation: K-Fold Cross-Validation with 5 splits is used to evaluate the model's performance across different subsets of the data.
+* Dropout: A dropout rate of 0.5 is applied in the classifier layer to prevent overfitting.
+* Epochs: The model is trained for 50 epochs in each fold of the cross-validation.
+* Loss Function: The CrossEntropyLoss is used as the loss function for training the model.
+
 ## Results
 
 ## Discussion
