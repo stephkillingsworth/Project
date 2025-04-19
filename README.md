@@ -27,7 +27,7 @@ We used a DenseNet121 model pretrained on ImageNet. Data was transformed for tra
 Several hyperparameter tuning techniques to optimize the performance of the image classification model using DenseNet121 were implemented due to the small dataset. 
 * Learning Rate: The learning rate is set to 1e-4 for the Adam optimizer.
 * Weight Decay: A weight decay of 1e-5 is applied to regularize the model and prevent overfitting.
-* Batch Size: The batch size for training and validation is set to 10 in Approach 1 and 2.
+* Batch Size: The batch size for training and validation is set to 16 in Approach 1 and 2.
 * Data Augmentation: Various data augmentation techniques are used to increase the dataset size and improve generalization:
   * Random Resize to 384 X 384 (as opposed to standard 
   * Random Grayscale
@@ -41,18 +41,18 @@ Several hyperparameter tuning techniques to optimize the performance of the imag
 ## Results
 
 * Lowers
- * --- K-Fold Summary ---
- Average Train Accuracy: 53.60% ± 2.11
- Average Val Accuracy:   59.63% ± 5.44
- Average Train Loss:     1.3261
- Average Val Loss:       1.3160
+ *--- K-Fold Summary ---
+Average Train Accuracy: 59.87% ± 1.04
+Average Val Accuracy:   67.45% ± 4.67
+Average Train Loss:     1.1590
+Average Val Loss:       1.0732
 
 * Uppers
  * --- K-Fold Summary ---
- Average Train Accuracy: 53.78% ± 1.82
- Average Val Accuracy:   59.45% ± 4.73
- Average Train Loss:     1.3082
- Average Val Loss:       1.3253
+Average Train Accuracy: 58.72% ± 1.36
+Average Val Accuracy:   66.74% ± 3.46
+Average Train Loss:     1.1829
+Average Val Loss:       1.0766
 
 ## Discussion
-Both the lower and upper molar approaches show similiar and consistent performance across the different folds, with the validation accuracy being higher than the training accuracy. This indicates that the model is generalizing well and not overfitting. The ~60% validation accuracy indicates that the model is learning more discriminative features. 
+Both the lower and upper molar approaches show similiar and consistent performance across the different folds, with the validation accuracy being higher than the training accuracy. This indicates that the model is generalizing well and not overfitting. The ~67% validation accuracy indicates that the model is learning more discriminative features. 
